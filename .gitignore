@@ -1,0 +1,12 @@
+# Cloned third-party repos: read for research only, not redistributed
+research/*/
+!research/gap-analysis.md
+__pycache__/
+*.pyc
+.env
+# user photos or generated cards never belong in the repo
+*.jpg
+*.jpeg
+*.png
+*.heic
+tests/out/

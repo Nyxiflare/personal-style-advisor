@@ -1,0 +1,329 @@
+{
+  "about": "Original starter palettes for personal-style-advisor (written 2026-11, MIT). Values chosen so each season's lightness and chroma match its definition; checked by tests/test_palette_tools.py. They are a starting point to test against the face in daylight, not a measured truth.",
+  "seasons": {
+    "Light Spring": {
+      "undertone": "warm-neutral", "value": "light", "chroma": "clear but delicate", "contrast": "low",
+      "neighbours": ["Light Summer", "Warm Spring"],
+      "metals": "light yellow gold, rose gold, polished champagne",
+      "summary": "Light, warm-leaning and clear. Pastels with a little warmth; avoid heavy darks and dusty greys near the face.",
+      "colours": [
+        {"name": "Warm ivory", "hex": "#FFF3DC", "role": "white substitute"},
+        {"name": "Light camel", "hex": "#D9B48C", "role": "neutral"},
+        {"name": "Warm stone", "hex": "#C8B9A2", "role": "neutral"},
+        {"name": "Soft navy", "hex": "#53698F", "role": "dark neutral"},
+        {"name": "Peach", "hex": "#F7B28A", "role": "face colour"},
+        {"name": "Light coral", "hex": "#F79A86", "role": "face colour"},
+        {"name": "Warm pink", "hex": "#F4A6B4", "role": "core"},
+        {"name": "Buttercup", "hex": "#F6D774", "role": "accent"},
+        {"name": "Mint", "hex": "#A6E2B8", "role": "core"},
+        {"name": "Light aqua", "hex": "#7FD3CA", "role": "core"},
+        {"name": "Periwinkle", "hex": "#9DB2EC", "role": "core"},
+        {"name": "Light warm teal", "hex": "#4DB3A6", "role": "accent"},
+        {"name": "Apricot", "hex": "#F9C79B", "role": "core"},
+        {"name": "Clear lilac", "hex": "#C3B0EA", "role": "accent"}
+      ],
+      "avoid": [
+        {"hex": "#000000", "why": "black is far darker than the face and drains it"},
+        {"hex": "#5A4E5E", "why": "dusty dark grey-plum muddies light warm skin"},
+        {"hex": "#6B3E26", "why": "heavy dark brown overpowers low contrast"}
+      ]
+    },
+    "Warm Spring": {
+      "undertone": "warm (golden)", "value": "medium-light", "chroma": "clear", "contrast": "medium",
+      "neighbours": ["Light Spring", "Bright Spring"],
+      "metals": "yellow gold, brass, warm bronze",
+      "summary": "Golden, fresh and clear. Warm brights and light warm neutrals; avoid icy, blue-based and greyed colours.",
+      "colours": [
+        {"name": "Cream", "hex": "#FDEFD2", "role": "white substitute"},
+        {"name": "Golden camel", "hex": "#C99A5B", "role": "neutral"},
+        {"name": "Warm taupe", "hex": "#A88B6D", "role": "neutral"},
+        {"name": "Chocolate", "hex": "#6A4325", "role": "dark neutral"},
+        {"name": "Coral", "hex": "#F27A5E", "role": "face colour"},
+        {"name": "Warm peach", "hex": "#F6A56E", "role": "face colour"},
+        {"name": "Marigold", "hex": "#F2B233", "role": "accent"},
+        {"name": "Golden yellow", "hex": "#F2CF45", "role": "accent"},
+        {"name": "Leaf green", "hex": "#76B643", "role": "core"},
+        {"name": "Warm turquoise", "hex": "#25B6A3", "role": "core"},
+        {"name": "Tomato red", "hex": "#E2442F", "role": "accent"},
+        {"name": "Warm aqua", "hex": "#5CC9B5", "role": "core"},
+        {"name": "Clear warm navy", "hex": "#2F4E7E", "role": "dark neutral"},
+        {"name": "Salmon pink", "hex": "#F58C84", "role": "core"}
+      ],
+      "avoid": [
+        {"hex": "#000000", "why": "black is too heavy and cool"},
+        {"hex": "#B7B9C8", "why": "cool grey-lavender greys out golden skin"},
+        {"hex": "#C71585", "why": "blue-based magenta clashes with golden undertone"}
+      ]
+    },
+    "Bright Spring": {
+      "undertone": "warm-neutral", "value": "medium", "chroma": "very clear / vivid", "contrast": "medium-high",
+      "neighbours": ["Warm Spring", "Bright Winter"],
+      "metals": "polished yellow gold, bright rose gold, shiny silver in small amounts",
+      "summary": "Vivid, clear and warm-leaning. Saturated brights with crisp contrast; avoid dusty, powdery and muddy colours.",
+      "colours": [
+        {"name": "Bright ivory", "hex": "#FFF8E7", "role": "white substitute"},
+        {"name": "Warm charcoal", "hex": "#3E3A36", "role": "dark neutral"},
+        {"name": "Bright navy", "hex": "#1F3F8F", "role": "dark neutral"},
+        {"name": "Light warm grey", "hex": "#BDB4A6", "role": "neutral"},
+        {"name": "Hot coral", "hex": "#FF5E4D", "role": "face colour"},
+        {"name": "Watermelon", "hex": "#F2475E", "role": "face colour"},
+        {"name": "Sunflower", "hex": "#FFCC1A", "role": "accent"},
+        {"name": "Kelly green", "hex": "#14A84A", "role": "core"},
+        {"name": "Turquoise", "hex": "#00B5B8", "role": "core"},
+        {"name": "Bright aqua", "hex": "#2ED3C6", "role": "accent"},
+        {"name": "Clear violet", "hex": "#7A4FD0", "role": "accent"},
+        {"name": "Poppy red", "hex": "#F0301F", "role": "accent"},
+        {"name": "Bright periwinkle", "hex": "#6F8CF2", "role": "core"},
+        {"name": "Hot pink", "hex": "#FF4F9A", "role": "core"}
+      ],
+      "avoid": [
+        {"hex": "#A39A8C", "why": "dusty greige flattens vivid colouring"},
+        {"hex": "#B58C8C", "why": "dusty rose looks faded next to clear features"},
+        {"hex": "#6E5A3F", "why": "muddy olive-brown dulls the face"}
+      ]
+    },
+    "Light Summer": {
+      "undertone": "cool-neutral", "value": "light", "chroma": "soft-medium", "contrast": "low",
+      "neighbours": ["Light Spring", "Cool Summer"],
+      "metals": "silver, white gold, platinum, soft rose gold",
+      "summary": "Light, cool-leaning and gentle. Powdery cool pastels and soft greys; avoid black, orange and heavy earth tones.",
+      "colours": [
+        {"name": "Soft white", "hex": "#F5F3EE", "role": "white substitute"},
+        {"name": "Light cool grey", "hex": "#BFC3C8", "role": "neutral"},
+        {"name": "Rose taupe", "hex": "#B9A3A0", "role": "neutral"},
+        {"name": "Slate navy", "hex": "#4E5E78", "role": "dark neutral"},
+        {"name": "Powder pink", "hex": "#EDB8C4", "role": "face colour"},
+        {"name": "Soft rose", "hex": "#DE97A8", "role": "face colour"},
+        {"name": "Powder blue", "hex": "#A9C6E6", "role": "core"},
+        {"name": "Lavender", "hex": "#B9AEDD", "role": "core"},
+        {"name": "Light periwinkle", "hex": "#9AA9E0", "role": "core"},
+        {"name": "Seafoam", "hex": "#A2D6CB", "role": "core"},
+        {"name": "Lemon ice", "hex": "#F1EDA6", "role": "accent"},
+        {"name": "Cool watermelon", "hex": "#E57F92", "role": "accent"},
+        {"name": "Soft teal", "hex": "#6FAFB0", "role": "accent"},
+        {"name": "Orchid haze", "hex": "#C99BC8", "role": "core"}
+      ],
+      "avoid": [
+        {"hex": "#000000", "why": "black overwhelms light, low-contrast colouring"},
+        {"hex": "#E86A1C", "why": "orange is too warm and strong"},
+        {"hex": "#5C4127", "why": "dark warm brown muddies cool light skin"}
+      ]
+    },
+    "Cool Summer": {
+      "undertone": "cool", "value": "light-medium", "chroma": "soft", "contrast": "low-medium",
+      "neighbours": ["Light Summer", "Soft Summer", "Cool Winter"],
+      "metals": "silver, pewter, platinum, white gold",
+      "summary": "Cool, softened and mid-light. Blue-based colours with a little grey in them; avoid orange, gold-yellow and stark black-and-white.",
+      "colours": [
+        {"name": "Soft white", "hex": "#F1F1EE", "role": "white substitute"},
+        {"name": "Blue grey", "hex": "#8C99A8", "role": "neutral"},
+        {"name": "Cool taupe", "hex": "#9C918F", "role": "neutral"},
+        {"name": "Greyed navy", "hex": "#3E4D68", "role": "dark neutral"},
+        {"name": "Raspberry soft", "hex": "#C25A7C", "role": "face colour"},
+        {"name": "Rose pink", "hex": "#D98AA2", "role": "face colour"},
+        {"name": "Cornflower", "hex": "#7D97CF", "role": "core"},
+        {"name": "Cool sea blue", "hex": "#4F86A8", "role": "core"},
+        {"name": "Soft plum", "hex": "#8A5A84", "role": "core"},
+        {"name": "Spruce", "hex": "#4F8C84", "role": "core"},
+        {"name": "Lavender grey", "hex": "#A7A1C4", "role": "neutral"},
+        {"name": "Watermelon cool", "hex": "#D8667F", "role": "accent"},
+        {"name": "Cool jade", "hex": "#6DAA9C", "role": "accent"},
+        {"name": "Denim", "hex": "#5B7499", "role": "core"}
+      ],
+      "avoid": [
+        {"hex": "#F28C28", "why": "orange fights the blue-pink undertone"},
+        {"hex": "#E0B000", "why": "golden yellow makes cool skin look sallow"},
+        {"hex": "#000000", "why": "pure black is harsher than the colouring"}
+      ]
+    },
+    "Soft Summer": {
+      "undertone": "cool-neutral", "value": "medium", "chroma": "muted", "contrast": "low-medium",
+      "neighbours": ["Cool Summer", "Soft Autumn"],
+      "metals": "brushed silver, pewter, matte rose gold",
+      "summary": "Muted, smoky and cool-leaning. Greyed blues, roses and sages; avoid neon, pure white, black and strong orange.",
+      "colours": [
+        {"name": "Oyster", "hex": "#E7E2DA", "role": "white substitute"},
+        {"name": "Mushroom", "hex": "#A59A92", "role": "neutral"},
+        {"name": "Charcoal blue", "hex": "#4A5562", "role": "dark neutral"},
+        {"name": "Grey taupe", "hex": "#8A8079", "role": "neutral"},
+        {"name": "Dusty rose", "hex": "#BC8A93", "role": "face colour"},
+        {"name": "Mauve", "hex": "#A57E95", "role": "face colour"},
+        {"name": "Smoky blue", "hex": "#7A90A6", "role": "core"},
+        {"name": "Sage grey", "hex": "#93A394", "role": "core"},
+        {"name": "Soft teal", "hex": "#5E8A88", "role": "core"},
+        {"name": "Heather plum", "hex": "#7E6478", "role": "core"},
+        {"name": "Dusty lilac", "hex": "#A89DB5", "role": "accent"},
+        {"name": "Muted raspberry", "hex": "#A85C73", "role": "accent"},
+        {"name": "Slate", "hex": "#6C7A89", "role": "neutral"},
+        {"name": "Soft spruce", "hex": "#5C7A6E", "role": "accent"}
+      ],
+      "avoid": [
+        {"hex": "#FFFFFF", "why": "optic white is starker than the muted colouring"},
+        {"hex": "#FF5E00", "why": "bright orange overwhelms soft cool skin"},
+        {"hex": "#00E676", "why": "neon green is far too saturated"}
+      ]
+    },
+    "Soft Autumn": {
+      "undertone": "warm-neutral", "value": "medium", "chroma": "muted", "contrast": "low-medium",
+      "neighbours": ["Soft Summer", "Warm Autumn"],
+      "metals": "brushed gold, antique brass, bronze, matte rose gold",
+      "summary": "Muted, warm-leaning and gentle. Earthy softened colours; avoid icy pastels, neon and stark black.",
+      "colours": [
+        {"name": "Warm oatmeal", "hex": "#E6DAC3", "role": "white substitute"},
+        {"name": "Camel", "hex": "#B08C62", "role": "neutral"},
+        {"name": "Mushroom taupe", "hex": "#998672", "role": "neutral"},
+        {"name": "Soft cocoa", "hex": "#5E4B3C", "role": "dark neutral"},
+        {"name": "Salmon clay", "hex": "#C98B73", "role": "face colour"},
+        {"name": "Dusty peach", "hex": "#D8A88C", "role": "face colour"},
+        {"name": "Sage", "hex": "#9AA587", "role": "core"},
+        {"name": "Moss", "hex": "#7A8558", "role": "core"},
+        {"name": "Soft teal", "hex": "#5F8A82", "role": "core"},
+        {"name": "Muted jade", "hex": "#7FA397", "role": "core"},
+        {"name": "Warm rose", "hex": "#B97F7A", "role": "accent"},
+        {"name": "Mustard soft", "hex": "#C4A35A", "role": "accent"},
+        {"name": "Dusty denim", "hex": "#667C8F", "role": "core"},
+        {"name": "Olive drab", "hex": "#6A6A48", "role": "dark neutral"}
+      ],
+      "avoid": [
+        {"hex": "#000000", "why": "black is harsh on low-contrast muted colouring"},
+        {"hex": "#FF1493", "why": "hot pink is too bright and cool"},
+        {"hex": "#BFE6FF", "why": "icy blue drains warmth"}
+      ]
+    },
+    "Warm Autumn": {
+      "undertone": "warm (golden)", "value": "medium-deep", "chroma": "medium / rich", "contrast": "medium",
+      "neighbours": ["Soft Autumn", "Deep Autumn"],
+      "metals": "yellow gold, copper, bronze, brass",
+      "summary": "Rich, golden and earthy. Spice colours and warm greens; avoid icy pastels, fuchsia and blue-grey.",
+      "colours": [
+        {"name": "Warm cream", "hex": "#F1E0BD", "role": "white substitute"},
+        {"name": "Caramel", "hex": "#A8743F", "role": "neutral"},
+        {"name": "Coffee", "hex": "#5C3D24", "role": "dark neutral"},
+        {"name": "Khaki", "hex": "#A39568", "role": "neutral"},
+        {"name": "Rust", "hex": "#B2512A", "role": "face colour"},
+        {"name": "Terracotta", "hex": "#C06A45", "role": "face colour"},
+        {"name": "Mustard", "hex": "#C9A03A", "role": "accent"},
+        {"name": "Pumpkin", "hex": "#D2712E", "role": "accent"},
+        {"name": "Olive", "hex": "#6F7533", "role": "core"},
+        {"name": "Forest moss", "hex": "#4E6B33", "role": "core"},
+        {"name": "Warm teal", "hex": "#2F7A70", "role": "core"},
+        {"name": "Tomato brick", "hex": "#B5402E", "role": "accent"},
+        {"name": "Bronze", "hex": "#8C6A33", "role": "neutral"},
+        {"name": "Petrol blue", "hex": "#2F5C6B", "role": "core"}
+      ],
+      "avoid": [
+        {"hex": "#E6E6FA", "why": "icy lavender greys out golden skin"},
+        {"hex": "#FF00A0", "why": "fuchsia is too cool and bright"},
+        {"hex": "#9AA5B5", "why": "blue-grey looks cold and dull near the face"}
+      ]
+    },
+    "Deep Autumn": {
+      "undertone": "warm-neutral", "value": "deep", "chroma": "rich", "contrast": "medium-high",
+      "neighbours": ["Warm Autumn", "Deep Winter"],
+      "metals": "antique gold, bronze, copper, gunmetal in small amounts",
+      "summary": "Deep, rich and warm-leaning. Dark spices, jewel-earth tones and espresso; avoid pastels and powdery greys.",
+      "colours": [
+        {"name": "Warm ivory", "hex": "#F0E2C8", "role": "white substitute"},
+        {"name": "Espresso", "hex": "#3B2618", "role": "black substitute"},
+        {"name": "Dark chocolate", "hex": "#4E3022", "role": "dark neutral"},
+        {"name": "Dark olive", "hex": "#4B4F26", "role": "neutral"},
+        {"name": "Brick red", "hex": "#8E3423", "role": "face colour"},
+        {"name": "Burnt orange", "hex": "#B5521F", "role": "face colour"},
+        {"name": "Deep teal", "hex": "#1D5C58", "role": "core"},
+        {"name": "Forest", "hex": "#2F4F2A", "role": "core"},
+        {"name": "Aubergine warm", "hex": "#4E2638", "role": "core"},
+        {"name": "Mahogany", "hex": "#6B2A1E", "role": "core"},
+        {"name": "Saffron", "hex": "#C88A1C", "role": "accent"},
+        {"name": "Paprika", "hex": "#A33A22", "role": "accent"},
+        {"name": "Dark petrol", "hex": "#1F4552", "role": "core"},
+        {"name": "Bottle green", "hex": "#1E4D36", "role": "accent"}
+      ],
+      "avoid": [
+        {"hex": "#F8C8DC", "why": "baby pink is too light and cool"},
+        {"hex": "#C0C8D8", "why": "powder blue-grey washes out depth"},
+        {"hex": "#FFF44F", "why": "lemon yellow is too light and acidic"}
+      ]
+    },
+    "Deep Winter": {
+      "undertone": "cool-neutral", "value": "deep", "chroma": "clear / rich", "contrast": "high",
+      "neighbours": ["Deep Autumn", "Cool Winter"],
+      "metals": "silver, platinum, white gold, gunmetal",
+      "summary": "Deep, cool-leaning and saturated. Black, jewel tones and icy accents; avoid golden earth tones, peach and dusty pastels.",
+      "colours": [
+        {"name": "Pure white", "hex": "#FAFAFA", "role": "white"},
+        {"name": "Black", "hex": "#0B0B0D", "role": "dark neutral"},
+        {"name": "Charcoal", "hex": "#333438", "role": "neutral"},
+        {"name": "Midnight navy", "hex": "#141E3C", "role": "dark neutral"},
+        {"name": "True red", "hex": "#B3122E", "role": "face colour"},
+        {"name": "Deep berry", "hex": "#7A1240", "role": "face colour"},
+        {"name": "Emerald", "hex": "#00704A", "role": "core"},
+        {"name": "Sapphire", "hex": "#1C3F94", "role": "core"},
+        {"name": "Plum", "hex": "#5B1F5E", "role": "core"},
+        {"name": "Deep teal", "hex": "#00585E", "role": "core"},
+        {"name": "Burgundy", "hex": "#6A0F25", "role": "core"},
+        {"name": "Royal purple", "hex": "#4B2A8C", "role": "accent"},
+        {"name": "Icy pink", "hex": "#F2DDE6", "role": "accent"},
+        {"name": "Pine", "hex": "#0F4434", "role": "accent"}
+      ],
+      "avoid": [
+        {"hex": "#F4C29A", "why": "peach is too light and warm"},
+        {"hex": "#C2A67A", "why": "golden camel turns the face sallow"},
+        {"hex": "#B9A9A5", "why": "dusty pastel lacks the depth and clarity"}
+      ]
+    },
+    "Cool Winter": {
+      "undertone": "cool", "value": "medium-deep", "chroma": "clear", "contrast": "high",
+      "neighbours": ["Deep Winter", "Bright Winter", "Cool Summer"],
+      "metals": "silver, platinum, white gold",
+      "summary": "Cool, clear and crisp. Blue-based brights, icy tints, black and white; avoid orange, gold-yellow and muted earth tones.",
+      "colours": [
+        {"name": "Snow white", "hex": "#FBFCFE", "role": "white"},
+        {"name": "Black", "hex": "#0A0A0F", "role": "dark neutral"},
+        {"name": "Cool charcoal", "hex": "#3A3D45", "role": "neutral"},
+        {"name": "Navy", "hex": "#152A5C", "role": "dark neutral"},
+        {"name": "Blue red", "hex": "#C8102E", "role": "face colour"},
+        {"name": "Fuchsia", "hex": "#C2187A", "role": "face colour"},
+        {"name": "Royal blue", "hex": "#2348B5", "role": "core"},
+        {"name": "Cool emerald", "hex": "#008060", "role": "core"},
+        {"name": "Icy blue", "hex": "#DCEBFA", "role": "accent"},
+        {"name": "Magenta", "hex": "#B0156E", "role": "core"},
+        {"name": "Violet", "hex": "#5B2EA6", "role": "core"},
+        {"name": "Pine teal", "hex": "#00606B", "role": "core"},
+        {"name": "Icy lavender", "hex": "#E4DDF5", "role": "accent"},
+        {"name": "Cool grey", "hex": "#8E939C", "role": "neutral"}
+      ],
+      "avoid": [
+        {"hex": "#E8822A", "why": "orange clashes with the cool undertone"},
+        {"hex": "#C4A35A", "why": "mustard looks muddy and warm"},
+        {"hex": "#B08C62", "why": "camel turns cool skin sallow"}
+      ]
+    },
+    "Bright Winter": {
+      "undertone": "cool-neutral", "value": "medium", "chroma": "very clear / vivid", "contrast": "high",
+      "neighbours": ["Cool Winter", "Bright Spring"],
+      "metals": "polished silver, platinum, chrome, bright white gold",
+      "summary": "Vivid, cool-leaning and high contrast. Electric jewel brights with black and white; avoid dusty, muted and beige colours.",
+      "colours": [
+        {"name": "Optic white", "hex": "#FFFFFF", "role": "white"},
+        {"name": "Black", "hex": "#000000", "role": "dark neutral"},
+        {"name": "Ink navy", "hex": "#101E50", "role": "dark neutral"},
+        {"name": "Steel grey", "hex": "#5A6070", "role": "neutral"},
+        {"name": "Hot magenta", "hex": "#E0157F", "role": "face colour"},
+        {"name": "Crimson", "hex": "#D7193A", "role": "face colour"},
+        {"name": "Electric blue", "hex": "#1E5BFF", "role": "core"},
+        {"name": "Emerald bright", "hex": "#00A36C", "role": "core"},
+        {"name": "Cobalt", "hex": "#0047AB", "role": "core"},
+        {"name": "Bright violet", "hex": "#7B2FD6", "role": "accent"},
+        {"name": "Turquoise cool", "hex": "#00A7C4", "role": "core"},
+        {"name": "Lemon cool", "hex": "#FFF04A", "role": "accent"},
+        {"name": "Icy mint", "hex": "#D9F7EE", "role": "accent"},
+        {"name": "Shocking pink", "hex": "#FF3FA4", "role": "accent"}
+      ],
+      "avoid": [
+        {"hex": "#C8B8A0", "why": "beige drains vivid contrast"},
+        {"hex": "#9E8C76", "why": "dusty taupe looks muddy"},
+        {"hex": "#B58C8C", "why": "dusty rose is too soft"}
+      ]
+    }
+  }
+}
