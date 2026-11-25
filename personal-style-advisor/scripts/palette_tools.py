@@ -7,7 +7,8 @@ codes (read from a colour-picker app, a product page, or estimated by the model)
 Commands
   describe HEX [HEX ...]          lightness, chroma, hue family in plain words
   match HEX --season NAME         nearest colours in a season palette, with distance
-  wb --white HEX --sample HEX     correct a sampled colour using a white reference
+  wb --white HEX --sample HEX [--reflection]   correct a sampled colour using white paper
+  overlap SEASON_A SEASON_B       colours that work in both seasons (between-season readings)
   contrast --skin HEX --hair HEX [--eyes HEX]   value contrast level
   card --season NAME [--out F]    write a self-contained HTML palette card
   seasons                         list season names in palettes.json
@@ -19,6 +20,7 @@ colour-analysis reference for how to state confidence.
 from __future__ import annotations
 
 import argparse
+import colorsys
 import html
 import json
 import math
@@ -126,12 +128,20 @@ def delta_e_2000(lab1, lab2) -> float:
 
 
 # ---------------------------------------------------------------- plain words
-HUE_FAMILIES = [  # (upper bound of LCh hue angle, name)
-    (20, "pink-red"), (45, "red / coral"), (70, "orange / rust"),
-    (95, "gold / mustard"), (115, "yellow / olive"), (165, "green"),
-    (200, "teal"), (250, "blue / turquoise"), (290, "blue / navy"),
-    (330, "purple / plum"), (360, "magenta / berry"),
+HUE_FAMILIES = [  # (upper bound of HSV hue angle in degrees, name)
+    (12, "red"), (22, "red / coral"), (40, "orange / rust"), (52, "gold / mustard"),
+    (66, "yellow / olive"), (160, "green"), (195, "teal / turquoise"),
+    (250, "blue / navy"), (275, "violet / indigo"), (300, "purple / plum"),
+    (335, "magenta / berry"), (352, "pink / rose"), (360, "red"),
 ]
+
+
+def hsv_hue(value: str) -> float:
+    """Hue angle (0-360) of the sRGB colour in HSV space. Used only for naming,
+    because colour names follow RGB hue more closely than CIELAB hue (in Lab,
+    pure blue and violet sit within a few degrees of each other)."""
+    r, g, b = (c / 255 for c in hex_to_rgb(value))
+    return colorsys.rgb_to_hsv(r, g, b)[0] * 360
 
 
 def lightness_word(L: float) -> str:
@@ -156,25 +166,41 @@ def chroma_word(C: float) -> str:
     return "clear / bright"
 
 
-def hue_word(h: float, C: float) -> str:
+def hue_word(hsv_h: float, C: float, L: float = 50.0) -> str:
+    """Name a hue from its HSV angle, with CIELAB chroma C and lightness L
+    to separate pinks from reds and browns/tans/creams from oranges."""
     if C < 8:
         return "neutral"
+    h = hsv_h
+    if h >= 335 or h < 5:
+        return "pink / rose" if (L >= 62 or C < 30) else "red"
+    if h < 15:
+        return "coral / salmon" if L >= 62 else "red / brick"
+    if h < 52:  # the orange-gold band also holds browns, tans and creams
+        if L >= 85 and C < 25:
+            return "cream / ivory"
+        if L < 45 and C < 45:
+            return "brown"
+        if C < 35:
+            return "tan / camel"
+        return "orange / rust" if h < 40 else "gold / mustard"
     for bound, name in HUE_FAMILIES:
         if h < bound:
             return name
-    return "magenta / berry"
+    return "red"
 
 
 def describe(value: str) -> dict:
     hx = parse_hex(value)
     L, C, h = lab_to_lch(hex_to_lab(hx))
+    name = hue_word(hsv_hue(hx), C, L)
     return {
         "hex": hx,
         "L": round(L, 1), "C": round(C, 1), "h": round(h, 1),
         "lightness": lightness_word(L),
         "chroma": chroma_word(C),
-        "hue_family": hue_word(h, C),
-        "words": f"{lightness_word(L)}, {chroma_word(C)} {hue_word(h, C)}",
+        "hue_family": name,
+        "words": f"{lightness_word(L)}, {chroma_word(C)} {name}",
     }
 
 
@@ -226,13 +252,37 @@ def match(value: str, season: str, palettes: dict, top: int = 3) -> dict:
     }
 
 
+def overlap(season_a: str, season_b: str, palettes: dict, limit: float = 12.0) -> dict:
+    """Colours from either season that sit close to a colour in the other one.
+
+    Useful for between-season readings and unconfirmed check-ins: these colours
+    are the safest bets while the reading is uncertain.
+    """
+    a_name, b_name = find_season(season_a, palettes), find_season(season_b, palettes)
+    shared = []
+    for src, other in ((a_name, b_name), (b_name, a_name)):
+        for item in palettes[src]["colours"]:
+            lab = hex_to_lab(item["hex"])
+            d = min(delta_e_2000(lab, hex_to_lab(o["hex"])) for o in palettes[other]["colours"])
+            if d <= limit:
+                shared.append({"hex": item["hex"], "name": item["name"], "from": src,
+                               "role": item["role"], "delta_e_to_other": round(d, 1),
+                               "words": describe(item["hex"])["words"]})
+    shared.sort(key=lambda s: s["delta_e_to_other"])
+    return {"seasons": [a_name, b_name], "limit": limit, "shared": shared}
+
+
 # ---------------------------------------------------------------- white balance
-def white_balance(white: str, sample: str) -> dict:
+def white_balance(white: str, sample: str, reflection: bool = False) -> dict:
     """Correct `sample` by the per-channel gains that turn `white` neutral.
 
-    `white` is how a known white object (printer paper, a white wall) appears in
-    the same photo. Returns the corrected sample, the cast found, and a
-    confidence level for anything read from the photo.
+    `white` is how a white object held next to the face (printer paper) appears in
+    the same photo. A wall behind the person is lit differently and is not a valid
+    reference. Set `reflection=True` when a coloured wall, clothing or foliage is
+    reflecting onto the face: then the face's cast differs from the paper's, so the
+    corrected hue is unreliable and only lightness and contrast should be used.
+    Returns the corrected sample, the cast found, and a confidence level for
+    undertone read from the photo.
     """
     wr, wg, wb = hex_to_rgb(white)
     if min(wr, wg, wb) < 40:
@@ -245,14 +295,16 @@ def white_balance(white: str, sample: str) -> dict:
     L, a, b = hex_to_lab(white)
     cast_strength = math.hypot(a, b)  # how far the "white" is from neutral
     casts = []
-    if b > 4:
+    if a < -4 and b > 4:
+        casts.append("green-yellow (foliage or green walls reflecting, fluorescent tubes)")
+    elif b > 4:
         casts.append("yellow/orange (warm bulb or golden hour)")
+    elif a < -4:
+        casts.append("green (fluorescent tubes, green walls or foliage reflecting)")
     if b < -4:
         casts.append("blue (shade, overcast, cool LED or screen light)")
     if a > 4:
         casts.append("magenta/pink (some LEDs, beauty filters)")
-    if a < -4:
-        casts.append("green (fluorescent tubes, foliage bounce)")
     clipped = max(hex_to_rgb(corrected)) >= 254
     if cast_strength <= 5 and L >= 75:
         confidence = "high"
@@ -262,6 +314,12 @@ def white_balance(white: str, sample: str) -> dict:
         confidence = "low"
     if clipped and confidence == "high":
         confidence = "medium"
+    if a < -4 and confidence == "high":
+        confidence = "medium"  # green casts mimic olive skin; never High
+    if reflection:
+        confidence = "low"
+    usable = (["lightness", "contrast"] if confidence == "low"
+              else ["lightness", "contrast", "undertone (with the stated confidence)"])
     return {
         "white_seen": parse_hex(white), "sample": parse_hex(sample),
         "corrected_sample": corrected,
@@ -270,8 +328,11 @@ def white_balance(white: str, sample: str) -> dict:
         "white_lightness": round(L, 1),
         "confidence": confidence,
         "clipped": clipped,
+        "reflection": reflection,
+        "usable_for": usable,
         "note": ("Correction is a simple per-channel gain. It cannot recover detail lost to "
-                 "beauty filters, heavy compression or mixed light from two sources."),
+                 "beauty filters, heavy compression, coloured reflections or mixed light "
+                 "from two sources."),
     }
 
 
@@ -343,6 +404,12 @@ def main(argv=None) -> int:
     w = sub.add_parser("wb")
     w.add_argument("--white", required=True)
     w.add_argument("--sample", required=True)
+    w.add_argument("--reflection", action="store_true",
+                   help="a coloured wall, top or foliage is reflecting onto the face")
+    o = sub.add_parser("overlap")
+    o.add_argument("season_a")
+    o.add_argument("season_b")
+    o.add_argument("--limit", type=float, default=12.0)
     c = sub.add_parser("contrast")
     c.add_argument("--skin", required=True)
     c.add_argument("--hair", required=True)
@@ -359,7 +426,9 @@ def main(argv=None) -> int:
         elif a.cmd == "match":
             _print(match(a.hex, a.season, load_palettes(), a.top))
         elif a.cmd == "wb":
-            _print(white_balance(a.white, a.sample))
+            _print(white_balance(a.white, a.sample, a.reflection))
+        elif a.cmd == "overlap":
+            _print(overlap(a.season_a, a.season_b, load_palettes(), a.limit))
         elif a.cmd == "contrast":
             _print(value_contrast(a.skin, a.hair, a.eyes))
         elif a.cmd == "card":

@@ -123,8 +123,7 @@ Rules, in order:
 - **Hair colour**: stay within one or two levels of the natural colour for the most natural result,
   and match the colouring's temperature (warm: golden, copper, caramel; cool: ash, burgundy,
   espresso). Henna and mehendi give warm red-orange tones.
-- **Greying**: grey and silver hair often moves a person toward softer or cooler palettes; check
-  the palette again.
+- **Greying**: silver or white hair changes contrast, and the direction depends on skin depth. On light skin it lowers contrast and often moves the palette softer or cooler; on medium-deep and deep skin it raises contrast and supports clearer, richer colour near the face. Re-check with two questions: does crisp white or cream look better now, and do bold colours look more alive or louder than before?
 - **Men and short hair**: a taper or fade with some length on top lengthens round faces; side
   volume or a textured crop suits long faces; a beard can add jaw definition (see below).
 

@@ -232,11 +232,11 @@
         {"name": "Deep teal", "hex": "#1D5C58", "role": "core"},
         {"name": "Forest", "hex": "#2F4F2A", "role": "core"},
         {"name": "Aubergine warm", "hex": "#4E2638", "role": "core"},
-        {"name": "Mahogany", "hex": "#6B2A1E", "role": "core"},
+        {"name": "Maroon", "hex": "#6A2029", "role": "face colour"},
         {"name": "Saffron", "hex": "#C88A1C", "role": "accent"},
         {"name": "Paprika", "hex": "#A33A22", "role": "accent"},
         {"name": "Dark petrol", "hex": "#1F4552", "role": "core"},
-        {"name": "Bottle green", "hex": "#1E4D36", "role": "accent"}
+        {"name": "Warm emerald", "hex": "#1C6B48", "role": "core"}
       ],
       "avoid": [
         {"hex": "#F8C8DC", "why": "baby pink is too light and cool"},

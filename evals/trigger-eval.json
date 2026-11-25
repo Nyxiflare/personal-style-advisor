@@ -1,0 +1,22 @@
+[
+  {"query": "my brother's wedding is in coimbatore in feb, morning muhurtham. im 5 foot nothing and dusky, what saree colour and blouse neck should i go for so i dont look lost in photos? budget around 12k", "should_trigger": true},
+  {"query": "I'm a 6'4\" guy, very pale with reddish hair. Every suit I buy makes me look like a ghost. What colours actually suit me for work?", "should_trigger": true},
+  {"query": "attached a selfie (window light, no makeup). am i a soft autumn or soft summer?? the apps keep giving me different answers", "should_trigger": true},
+  {"query": "What kind of glasses frames would suit a round face with a short neck? I also wear a hijab most days, does that change anything", "should_trigger": true},
+  {"query": "I use a wheelchair full time and have a black-tie charity dinner in Manchester. Long dresses get caught in my wheels. What can I wear that still feels glam?", "should_trigger": true},
+  {"query": "which celebs have a similar build and colouring to me? I'm 158cm, curvy, deep warm skin, south indian. I want style inspo I can actually copy, not lookalikes", "should_trigger": true},
+  {"query": "help me build a 20 piece capsule wardrobe for my move to Singapore, I work in consulting and it's humid all year, I'm a petite woman with olive skin", "should_trigger": true},
+  {"query": "sangeet next month, I'm a broad-shouldered guy, 5'10, wheatish. sherwani or indo-western? what colour?", "should_trigger": true},
+  {"query": "I'm non-binary and starting at a design agency in Berlin. I want clothes that suit my body (short torso, wide hips) without looking feminine or masculine. Where do I even start?", "should_trigger": true},
+  {"query": "Go through my wardrobe list and tell me what to keep: navy blazer, mustard cardigan, three black tees, grey hoodie, rust midi skirt, pastel pink shirt. I think I'm a deep autumn", "should_trigger": true},
+  {"query": "Write a product description for our new linen kurta collection for the website, about 80 words, warm and premium tone", "should_trigger": false},
+  {"query": "Which is better value, this Uniqlo merino sweater for 2990 or the H&M one for 1999? Compare fabric quality and durability, links attached", "should_trigger": false},
+  {"query": "pick a colour palette for my startup's brand, we sell organic skincare and want earthy but modern. give me hex codes", "should_trigger": false},
+  {"query": "explain the history of the saree and how draping styles evolved over the centuries, for my school essay", "should_trigger": false},
+  {"query": "Build me a React component that shows a grid of clothing items from our product API with filters for size and colour", "should_trigger": false},
+  {"query": "my skin gets really dry and flaky in winter and I have dark patches on my cheeks, what skincare routine and ingredients should I use?", "should_trigger": false},
+  {"query": "can you train an image classifier in pytorch to detect face shapes from the kaggle face-shape dataset? need the training loop", "should_trigger": false},
+  {"query": "I want to start a clothing resale business on Instagram selling thrifted vintage, how do I price items and find suppliers?", "should_trigger": false},
+  {"query": "Which celebrity do I look like? Here's my photo, just for fun", "should_trigger": false},
+  {"query": "design a mood board for my bedroom makeover, I like japandi with warm wood and sage green", "should_trigger": false}
+]

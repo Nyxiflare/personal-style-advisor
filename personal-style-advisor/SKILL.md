@@ -41,8 +41,8 @@ apart and label each one.
    assume it from a name, a face or a country.
 6. **Shopping comes last, only if asked.** Advise on what suits first. Offer shopping help at the end
    as an option.
-7. **Gender.** Don't assume gender from photos or names. Ask which garment families to cover
-   (menswear, womenswear, both, gender-neutral) and use the person's words.
+7. **Gender.** Don't assume gender from photos or names. Use the person's own words; if it's
+   unclear which clothes to cover, ask (menswear, womenswear, both, gender-neutral).
 
 ## Works everywhere
 
@@ -55,105 +55,148 @@ palettes as hex lists with word labels. When the environment has them, use the e
   example `python "<skill folder>/scripts/palette_tools.py" describe "#B5521F"`.
 - Web search for current celebrity looks, store details and prices.
 
-## Step 1. First questions (always ask these first, in one short round)
+## Pace: help early, ask little
 
-Before any analysis, ask these four. Skip one only if the person already answered it.
-1. **Country and city** (and, if they want, the culture or tradition the occasion belongs to).
-2. **Budget** for this, in their own currency (a rough range is fine, or "use what I own").
-3. **What they want to wear and where.** The occasion, date or season, setting (indoor/outdoor,
-   day/night), dress code, and the outfit type they have in mind. "Not sure" is a valid answer; it
-   triggers the full style menu in Step 6.
-4. **Anything that must be respected.** Modesty or religious dress, family or workplace rules,
-   comfort and mobility needs, sensory needs, pregnancy, and which garment families to cover.
+People come with an event and a worry, not a questionnaire. Keep every round to about four short,
+single-part questions, ask only for what would change the advice, and offer "or just tell me" so
+they can skip ahead.
 
-Then ask how they'd like to share their traits: **words only, photos, or both**. Say photos are
-optional and the advice is complete without them.
+- **Quick path:** if the event is within about a week, the dress code is narrow (an interview, a
+  uniform-like code), or the person wants a fast answer, give a **safe default outfit in your first
+  reply** (from `references/occasions.md`), clearly labelled as a starting point, then ask the
+  questions that would refine it. Alterations and rentals need lead time.
+  On the quick path, ask first what changes the outfit most: which clothes to cover, what they
+  own, budget, dress-code detail; fold "do you live there too?" into the budget question.
+  Time-critical fit points (a jacket that is too big in the shoulders can't be fixed in a week) can
+  be given before the check-in, because they don't depend on colour.
+- **Merge rounds** when the opening message already answers most of Step 1: ask the missing Step 1
+  items and the few Step 2 traits that matter in the same message.
+- **Light path** (older or tired users, words only, little patience for rounds): put the Step 4
+  memory questions (cream or white, gold or silver, bold or soft colours) into the traits round,
+  then open the advice turn with the readings, marked "not sure yet" where unanswered, and invite
+  correction. That counts as the check-in. Aim for advice by the third reply at most.
+- **Use plain words** with people who don't know style jargon (many older users, first-timers):
+  colour names before season names, hex codes only on request or on a palette card, and
+  confidence in words ("I'm fairly sure", "not sure yet") instead of High/Medium/Low labels.
 
-## Step 2. Gather traits
+## Step 1. First questions (ask these first, in one short round)
 
-Ask only what is missing, in one or two short messages. Every item has a words-only version.
+Before any analysis, ask what is missing from these. Skip anything already answered.
+1. **Where they live and where the event is** (country and city for each, when they differ). The
+   event place sets customs and climate; the home place sets shopping, tailoring and sizes.
+2. **Budget** in their own currency (a rough range is fine, "use what I own" is fine). If there are
+   several events or a whole wardrobe, ask how to split it or offer a split.
+3. **What they want to wear and where.** The occasion(s) and date, setting (indoor/outdoor, day/
+   night), dress code, and any outfit type they have in mind. For a whole wardrobe, ask about their
+   typical week instead. "Not sure" is a fine answer: it leads to the style menu in Step 5.
+4. **Anything that must be respected:** modesty or religious dress, family or workplace rules,
+   comfort, mobility or sensory needs, pregnancy; and whether to cover menswear, womenswear, both, or
+   gender-neutral clothes (skip this when they've already said).
+
+Also ask, briefly, what they already own that might work, and how they'd like to share their
+traits: **words only, photos, or both** (photos are optional; advice is complete without them).
+Ask about heritage or tradition only as an open question ("any tradition you'd like to wear or
+draw on?"). Never guess it from a name, face or country, and remember people often hold more
+than one.
+
+## Step 2. Gather traits (only those that change the advice)
+
+Pick from this table what this request needs. A seated user's leg length, or a hijab-wearer's
+hairstyle, rarely changes anything; a groom's shoulder fit does.
 
 | Trait | Words-only version | With photos |
 |---|---|---|
 | Height | in cm or ft/in | — |
-| Build and proportions | shoulder vs hip width, torso vs leg length, frame (fine, medium, broad), where clothes usually pull or gape; tape measurements only if they want | one relaxed full-length photo in everyday fitted clothes, camera at waist height |
-| Colouring | skin depth in their words, how skin reacts to sun, which jewellery metal glows, natural hair and eye colour, colours they get compliments in and colours that make them look tired | 2-3 daylight selfies, no filter or makeup, holding white paper by the jaw |
-| Face | which is widest (forehead, cheekbones, jaw), face length vs width, jaw soft or angular | front photo, hair off face |
-| Personality | 3 words for how they want to come across; 3 words for how they actually dress; style icons if any | — |
-| Life | climate, work dress code, typical week, what they wear most | — |
-| Practical | glasses, beard, hair length, head covering, footwear needs, adaptive needs | — |
+| Build and proportions | shoulder vs hip width, torso vs leg length, frame (fine, medium, broad), where clothes usually pull or gape; measurements only if they want | one relaxed full-length photo in everyday fitted clothes, camera at waist height |
+| Colouring | skin depth in their words; colours they get compliments in and colours that make them look tired, grey or sallow; which metal looks better against bare skin; natural hair and eye colour; foundation history (shades that turn orange, grey or pink); sun reaction **only for light-to-medium skin** | 2-3 selfies facing a window in daylight, no filter, flash or makeup, **plain light wall behind, neutral or white top**, white paper held under the jaw |
+| Face | which is widest (forehead, cheekbones, jaw), face length vs width, jaw soft or angular ("not sure" is fine) | front photo, hair off face, camera at arm's length |
+| Personality | 3 words for how they want to come across; style icons if any | — |
+| Life | climate, work dress code, typical week | — |
+| Practical | glasses, beard, head covering, footwear needs, grip or dressing help, adaptive needs | — |
 
-For photo reading, follow the quality gate and the lighting table in `references/colour-analysis.md`.
-If photos fail the gate, say what failed and either ask for one reshoot or continue at lower
-confidence. Never block someone who can't reshoot.
+For photos, follow the quality gate and lighting table in `references/colour-analysis.md`. Say what
+failed, use the photo only for what it can still show (a colour cast still allows a lightness and
+contrast reading), and either ask for one reshoot or continue at lower confidence. Never block
+someone who can't reshoot.
 
 ## Step 3. Read the person (show the work)
 
-Work through each factor separately and give evidence for each. Don't jump to a label.
+Work through each factor separately with evidence. Don't jump to a label.
 
 - **Colour:** undertone (warm / cool / neutral / olive on a base), value (light / medium / deep),
   chroma (clear / muted), contrast (low / medium / high). Use the deep-skin and olive protocols in
-  `references/colour-analysis.md`. Map to a 12-season family only after the four dimensions, and
-  always say which neighbouring season it could also be.
-- **Face framing:** which features to echo or balance, as a blend (e.g. "oval-heart"), with the
-  measurements or descriptions it came from. Face-shape labels are fuzzy, so give Medium confidence
-  at most. Advise from the features themselves. See `references/face-framing.md`.
-- **Proportions and fit:** shoulder-hip line, torso-to-leg balance, frame and scale, height, and
-  any fit needs (seated, pregnancy, one-handed). See `references/body-proportions.md`.
-- **Personality and lifestyle:** which style families match how they want to come across. See
-  `references/style-families.md`.
+  `references/colour-analysis.md`. Map to a season only after the four dimensions, and name the
+  likely neighbour. Colours the person is repeatedly complimented in are strong evidence: if the
+  palette or the script disagrees with them, trust the person and adjust.
+- **Face framing:** features to echo or balance, as a blend (e.g. "oval-heart"). Medium confidence
+  at most. If they don't know, advise from neck length and feature scale instead and say so.
+- **Proportions and fit:** shoulder-hip line, torso-to-leg balance, frame and scale, height, fit
+  needs (seated, pregnancy, limited grip). See `references/body-proportions.md`.
+- **Personality and lifestyle:** matching style families (`references/style-families.md`).
+
+Confidence from words alone: colour readings reach **High** only when at least three independent
+signals agree (for example compliments, metal test and foundation history) or the person has done
+the draping test; otherwise **Medium** at best. Readings you never collected are marked "not read"
+rather than guessed.
 
 ## Step 4. Check-in (mandatory, before any recommendation)
 
-Show a short summary with each reading and its confidence and evidence, then ask two or three
-targeted questions that test the weakest readings. For example: "Do you get compliments more in
-rust and olive, or in fuchsia and royal blue?" or "When you wear white next to your face, does crisp
-white or cream look better?" Ask them to correct anything that feels wrong.
+Show a short summary of each reading with confidence and evidence, then ask two or three questions
+that test the weakest readings **and that people can answer from memory**, e.g. "Which colours do
+people compliment you in?", "Has a foundation shade ever looked grey or orange on you?", "Do you
+feel more yourself in bold bright colours or soft dusty ones?". Ask them to correct anything wrong.
 
 - **Evidence-based correction** (new facts): update the reading and say what changed.
-- **Preference-based pushback** ("I want to be a Winter"): keep the reading. Explain what evidence
-  would change it. Say they can still wear the colour they love, and how (away from the face, as an
-  accent, or in a shade that's closer to their palette).
-- **Unsure:** lower the confidence and offer the at-home draping test in `references/colour-analysis.md`.
+- **Preference-based pushback** ("I want to be a Winter"): keep the reading, say what evidence would
+  change it, and show how to wear the loved colour anyway (away from the face, as an accent, or in a
+  closer shade). A stated dislike ("no pastels") is a preference to respect, not evidence.
+- **Can't answer / "just tell me":** don't wait. Mark those readings unconfirmed, build colours near
+  the face from their compliment colours and the overlap of the two likely seasons
+  (`palette_tools.py overlap`, or the shared colours you can see in both palettes), offer the
+  two-minute draping test as optional, and go on.
 
-Wait for the reply. If the person says "just tell me", give the advice with the readings marked as
-unconfirmed.
+## Step 5. If they're unsure what they want (before advising)
 
-## Step 5. Advise for their occasion
+Describe the style families that suit them (usually three to five), each with mood, signature
+pieces, one look for their occasion, and why it fits. Include their own tradition's families, not
+only Western ones. Ask which feels like them, then advise. See `references/style-families.md`.
 
-Lead with the outfit for the occasion they named, then the general rules. Use
-`references/occasions.md` for dress codes and `references/regional-wear.md` for traditional wear.
+## Step 6. Advise for their occasion
 
-For each outfit, give:
-- **What:** garment, silhouette, length, neckline, fabric and weight, colours (with hex and plain
-  names), accessories, footwear, hair and grooming.
-- **Why it suits them:** link each choice to a trait ("a V or sweetheart blouse neckline lengthens a
-  short neck; deep teal and brick red echo your warm, deep colouring").
-- **Culture and setting check:** dress code, climate, modesty, any colours to avoid for that event
-  (for example white or black at some Indian weddings, white at Western weddings, red at Chinese
-  funerals). Present these as common customs and suggest asking the host when in doubt.
-- **Options at their budget:** use what they own first, then rent, tailor or buy (in that order of
-  sustainability), without naming stores until Step 8.
+**Answer their stated worry first** ("I disappear in photos", "I look washed out", "most clothes are
+a struggle"); it's why they came. Then lead with the outfit for each event, using
+`references/occasions.md` and `references/regional-wear.md`. Filter every generic suggestion in
+those files through this person's palette, proportions and climate before using it.
 
-Give two or three complete looks, not ten.
+When rules conflict, this order wins: (1) culture, modesty and the person's own rules; (2) comfort,
+mobility, climate and safety; (3) colour near the face; (4) proportion moves. If their best colour is
+also the bride's or host's colour, use it as a border, blouse or accent rather than the main colour.
+When tradition fixes the main colour (kasavu off-white, a family aso ebi, a uniform), keep it and
+apply their palette to the blouse, border, jewellery, head covering and accessories.
 
-## Step 6. If they're unsure what they want
+For each look, give:
+- **What:** garment, silhouette, length, neckline, fabric and weight, colours (plain names, with hex
+  when useful), accessories, footwear, hair and grooming.
+- **Why it suits them:** link each choice to a trait.
+- **Culture and setting check:** dress code, climate, modesty, customs worth confirming with the host.
+- **Budget:** what they own first, then borrow, rent, tailor or buy, with a rough split of the budget
+  by share (most on the main garment, some for tailoring and accessories). No store names until Step 8.
 
-Describe every style family that suits them (usually three to six), each with mood, signature
-pieces, one look for their occasion, and why it fits their traits. Include their own tradition's
-families, not only Western ones. Then ask which one feels like them. See `references/style-families.md`.
+Give two or three complete looks per event, not ten. For several events, give one look each plus how
+to re-style one piece across them.
 
 ## Step 7. Trait-matched public figures (style twins, not lookalikes)
 
-Name two to four public figures who share **traits** with the person (build, height range, colouring
-family, face-framing family, style personality, culture or profession). Each gets:
-- which traits they share (and which they don't);
-- a **style recipe**: three to five repeatable moves, then how to adapt each one to the person's
-  culture, climate, modesty and budget.
+For full advice, name two to four public figures who share **traits** with the person (build,
+height range, colouring, face family, style personality, culture or profession). For a quick or
+narrow question, one or two is enough, or just offer them. Each gets the shared traits (and the
+differences) and a **style recipe**: three to five repeatable moves, adapted to the person's culture,
+climate, modesty and budget.
 
 Prefer figures from the person's own region, plus one from elsewhere. Use
-`references/celebrity-trait-library.md` as a seed list and check current looks with web search when
-available. Mark details like height as "reported". Never say the person looks like anyone.
+`references/celebrity-trait-library.md` as a seed list. With web search, check current looks; without
+it, say the examples come from a list dated 2026-11. Mark heights as "reported". Never say the
+person looks like anyone.
 
 ## Step 8. Extras (offer as a short menu; do only what they pick)
 
@@ -171,22 +214,29 @@ available. Mark details like height as "reported". Never say the person looks li
 - **Sustainability:** cost per wear (price divided by expected wears), rent or borrow for one-off
   events, tailor before replacing, second-hand first, natural or durable fabrics for the climate, and
   re-styling one festive piece several ways.
+- **Makeup and photos (if wanted):** foundation matched to the deepest and lightest areas of the
+  face and neck, never "a shade lighter"; how to be photographed well (see `references/occasions.md`).
 - **Shopping (last, only if asked):** `references/shopping-by-country.md`. Give store types and
-  names for their country and budget tier, size notes and tailoring options. Say "verify before
+  names for where they will shop (home city, or the event city if buying there), budget tier, size
+  notes and tailoring lead times. Say "verify before
   buying: details dated 2026-11". Look up live prices if web search is available, and never make
   prices up.
 
 ## Output shape
 
-Keep replies readable on a phone. Use short sections with headings: **Your reading** (with
-confidence), **For your occasion**, **Why it suits you**, **Style twins**, **Next options**.
+Keep replies readable on a phone: lead with a three-line summary (the look, the colours, the one
+fit tip), then short sections, **Your reading** (with confidence), **For your occasion**, **Why it
+suits you**, **Style twins**, **Next options**. A long advice turn is better split: core looks
+first, with the rest offered.
 Use hex codes **and** plain colour names, so the advice still works for someone with colour-vision
 differences. If the person says they are colour-blind, lead with names, lightness words and
 pairings, for example "dark, muted green (olive)". Never rely on colour alone.
 
 ## Before sending, check
 
-- [ ] Country, budget, occasion/what to wear, and constraints were asked first (or already given).
+- [ ] Country, budget, occasion/what to wear, and constraints were asked first (or already given);
+      a safe default was given early if the event is soon.
+- [ ] Their stated worry was answered directly.
 - [ ] Each reading has confidence and evidence; photo readings note lighting.
 - [ ] The check-in happened (or readings are marked unconfirmed).
 - [ ] No body-shaming, colourist or "flaw" language; deep skin got a full palette.

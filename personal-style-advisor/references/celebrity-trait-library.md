@@ -44,11 +44,18 @@ Columns: **Build** (frame and proportions as publicly visible), **Height** (repo
 | Vicky Kaushal | athletic, tall | tall | medium, warm look | oval-long | classic masculine | Earth tones, bandhgalas, crisp kurta-pajama, layered textures | L |
 | Mahesh Babu | slim-athletic | tall | light-medium, warm-neutral | oval | clean classic | Simple tees and shirts, well-cut suits, plain kurtas; very little ornament | L |
 | Dulquer Salmaan | slim | average-tall | medium, warm look | oval | relaxed smart | Linen shirts, mundu and shirt for Kerala events, tailored casual | L |
-| Rekha | slim, petite-average | average | medium, warm look, high contrast | oval-heart | regal classic | Kanjivaram sarees in gold and jewel tones, heavy temple jewellery, sindoor, red lip; consistent signature over decades | M |
+| Rekha | slim | average | medium, warm look, high contrast | oval-heart | regal classic | Kanjivaram sarees in gold and jewel tones, heavy temple jewellery, sindoor, red lip; consistent signature over decades | M |
+| M. S. Subbulakshmi (India, historical, 1916-2004) | medium | average | medium-deep, warm look | round-oval | regal classical | Kanjivaram silk with contrast borders, the blue shade traders still call "MS blue", diamond nose studs, jasmine in a low bun, large kumkum: a model for traditional Tamil silk dressing | M |
+| Aishwarya Rajesh (India, Tamil and Telugu cinema) | medium | not verified | deep, warm look | oval | grounded classic | Silk and cotton sarees in rich colours, simple temple jewellery; has spoken publicly about colour bias in film casting (verify current interviews) | L |
+| Sudha Chandran (India) | medium | not verified | medium, warm look | oval | classic Indian glamour | Bold bindis, silk sarees, statement earrings; a dancer and actor who uses a prosthetic leg after a 1981 accident | M |
+| R. Madhavan (India) | medium-athletic | average-tall | medium, neutral look | oval | relaxed classic | Linen and cotton shirts, kurtas with Nehru jackets, soft tailoring, neutral and earthy colours | L |
 | Fawad Khan (Pakistan) | slim-athletic | tall | light-medium, warm-neutral | oval-square | refined classic | Shalwar kameez with waistcoat, tonal neutrals, well-groomed beard | L |
 | Mahira Khan (Pakistan) | slim | average | light-medium, warm | oval | soft classic | Long kameez, flowing dupattas, pastels and whites, minimal jewellery | L |
 
 ## East and Southeast Asia
+
+Heights vary within every region: don't assume a person matches only tall figures; search for
+figures of their own height range.
 
 | Name | Build | Height | Colouring | Face family | Style personality | Recipe | Conf. |
 |---|---|---|---|---|---|---|---|
@@ -71,17 +78,19 @@ Columns: **Build** (frame and proportions as publicly visible), **Height** (repo
 | Lupita Nyong'o (Kenya / Mexico) | slim | average | deep, cool-neutral look, high contrast | oval-heart | bold colour, sculptural | Saturated jewel tones (cobalt, emerald, fuchsia, yellow), short natural hair, sculptural shapes | M |
 | Mo Abudu (Nigeria) | medium | average | deep, warm-neutral | oval | power classic | Tailored suits and native wear in rich colours, gele, statement jewellery | L |
 | Burna Boy (Nigeria) | athletic | average | deep, warm-neutral | oval | Afro-luxury streetwear | Statement jewellery, agbada reworked with street pieces, bold prints | L |
+| Genevieve Nnaji (Nigeria, Igbo) | slim | average | deep, warm-neutral | oval | polished classic | Clean tailoring, structured native wear in lace and george, gele on occasion, minimal jewellery | M |
+| Precious Lee (USA, model) | plus size, curvy | tall | deep, neutral-cool look, high contrast | oval | glamorous editorial | Body-skimming gowns with structure, strong jewel tones and black-and-white, sleek hair | M |
 | Idris Elba (UK) | tall, broad | tall | deep, warm-neutral | square | rugged classic | Dark tailoring, overcoats, knitwear, beard grooming, earth and navy tones | M |
 
 ## Middle East and North Africa (including modest dressing)
 
 | Name | Build | Height | Colouring | Face family | Style personality | Recipe | Conf. |
 |---|---|---|---|---|---|---|---|
-| Sheikha Moza bint Nasser (Qatar) | slim | average | light-medium, olive-warm look | oval | modest couture | Long tailored silhouettes, turban-style head wraps, high necks, full sleeves, jewel and pastel solids, statement brooches | M |
-| Ascia Al Faraj (Kuwait / USA, influencer) | slim | average | light-medium, olive look | oval | modern modest minimal | Neutral long layers, structured coats, matching hijab tones, clean sneakers or loafers | L |
-| Dina Torkia (UK / Egypt, modest blogger) | medium | average | light-medium, olive-warm | oval | playful modest | Colourful turban-style and wrapped hijabs, long dresses, bold prints, vintage touches | L |
-| Halima Aden (Somalia / USA) | slim, tall | tall | deep, warm-neutral | oval | modest glamour | Full coverage gowns and burkinis, coordinated hijab and gown colours. She has spoken publicly about leaving runway work over how her hijab was styled: always let the user set the coverage | M |
-| Queen Rania (Jordan) | slim | average-tall | light-medium, olive-neutral | oval | polished classic | Tailored dresses and coats, neutrals with one colour, long lines | M |
+| Sheikha Moza bint Nasser (Qatar; covers hair with turban-style wraps) | slim | average | light-medium, olive-warm look | oval | modest couture | Long tailored silhouettes, turban-style head wraps, high necks, full sleeves, jewel and pastel solids, statement brooches | M |
+| Ascia Al Faraj (Kuwait / USA, influencer; wears hijab) | slim | average | light-medium, olive look | oval | modern modest minimal | Neutral long layers, structured coats, matching hijab tones, clean sneakers or loafers | L |
+| Dina Torkia (UK / Egypt, modest blogger; has worn and later stopped wearing hijab, check current) | medium | average | light-medium, olive-warm | oval | playful modest | Colourful turban-style and wrapped hijabs, long dresses, bold prints, vintage touches | L |
+| Halima Aden (Somalia / USA; wears hijab) | slim, tall | tall | deep, warm-neutral | oval | modest glamour | Full coverage gowns and burkinis, coordinated hijab and gown colours. She has spoken publicly about leaving runway work over how her hijab was styled: always let the user set the coverage | M |
+| Queen Rania (Jordan; does not cover hair, modest-classic cuts only) | slim | average-tall | light-medium, olive-neutral | oval | polished classic | Tailored dresses and coats, neutrals with one colour, long lines | M |
 | Rami Malek (USA, Egyptian heritage) | slim | average | light-medium, olive-cool look | oval-heart | classic with a twist | Slim suits in unusual colours (green, maroon), narrow ties | L |
 
 ## Europe and the Americas
@@ -93,18 +102,19 @@ Columns: **Build** (frame and proportions as publicly visible), **Height** (repo
 | Tom Hiddleston (UK) | tall, slim | tall | fair, cool look | long | sharp classic | Slim navy suits, crisp shirts, polished shoes; summer linen | M |
 | Cillian Murphy (Ireland) | slim | average | fair, cool, high contrast (dark hair, light eyes) | heart-oval | understated | Dark knitwear, slim dark suits, minimal colour | M |
 | Helen Mirren (UK) | medium | average | fair, cool-neutral, silver hair | oval-heart | glamorous mature | Bold colour gowns, silver hair embraced, statement necklaces | M |
+| Diane Kruger (Germany) | slim | average-tall | fair, cool-neutral look | oval-heart | minimal chic | Clean tailoring, soft neutrals, pale blues, slip dresses, minimal jewellery | M |
 | Penélope Cruz (Spain) | petite-average, curvy | average | medium, warm-olive, high contrast | oval-heart | Mediterranean glamour | Red and black, fitted waists, soft waves | M |
 | Salma Hayek (Mexico) | petite, curvy | petite | medium, warm, high contrast | round-heart | glamour | Structured bodices, defined waists, jewel tones, heels optional | M |
 | Bad Bunny (Puerto Rico) | slim | average | medium, warm-neutral | oval | gender-fluid streetwear | Skirts, nail colour, bold sunglasses, mixing menswear and womenswear freely | L |
 
-## Gender-neutral and non-binary public figures
+## Non-binary and gender-fluid dressing public figures
 
 | Name | Build | Height | Colouring | Style personality | Recipe | Conf. |
 |---|---|---|---|---|---|---|
 | Janelle Monáe (USA; uses she/her and they/them per press) | petite, slim | petite | deep, warm-neutral, high contrast | graphic tailoring | Black-and-white and bold colour tailoring, wide trousers, statement hats and collars | M |
 | Amandla Stenberg (USA, Black and white Danish heritage; she/they per interviews) | slim, medium | average | medium, warm-neutral | relaxed androgynous | Suits with sneakers, relaxed tailoring, natural hair styles, earthy and jewel tones | M |
 | Indya Moore (USA, Afro-Latinx; they/them) | slim, tall | tall | medium-deep, warm | experimental | Draped and sheer fabrics, gender-fluid mixing, bold jewellery | L |
-| Harry Styles (UK; has not labelled his gender) | slim | average-tall | light, neutral | 1970s-inspired fluid | Wide-leg trousers, pearls, cardigans, colour and print mixing | M |
+| Harry Styles (UK; has not publicly labelled his gender, listed for gender-fluid dressing only) | slim | average-tall | light, neutral | 1970s-inspired fluid | Wide-leg trousers, pearls, cardigans, colour and print mixing | M |
 
 ## Adaptive and disabled style figures
 

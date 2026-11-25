@@ -56,6 +56,7 @@ occasion, and let them choose.
 | African print and couture | bold, celebratory | ankara (wax print), kente, aso oke, bogolan (mudcloth), boubou, kaftan, agbada, gele | Nigeria, Ghana, Senegal, Mali and more |
 | Latin American heritage | vivid, crafted | huipil, guayabera, embroidered blouses, ponchos, rebozo, pollera | Mexico, Caribbean, Andes, Panama |
 | European heritage | festive, local | dirndl and lederhosen, tartan and kilt, Nordic knits, flamenco dress, Balkan embroidery | mostly festivals and weddings |
+| Everyday heritage fusion (diaspora, mixed heritage) | personal, rooted, modern | one heritage piece or textile per outfit (ankara, kente trim, block print, ikat, Aran knit, batik) with clean basics; heritage jewellery; tailoring cut in heritage fabric | anyone drawing on their own traditions at work and every day |
 | Pacific and Indigenous | ceremonial, community | lavalava, puletasi, aloha shirts, tapa patterns, Māori and Aboriginal designers | wear Indigenous sacred items only as the community allows |
 
 ## Mixing families: a quick recipe

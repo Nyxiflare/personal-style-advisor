@@ -58,6 +58,15 @@ class TestConversions(unittest.TestCase):
         self.assertEqual(d["hex"], "#6F7533")
         self.assertIn("olive", d["hue_family"])
         self.assertIn("green", pt.describe("#14A84A")["hue_family"])
+        # Regression: blues were once named "purple" (CIELAB hue puts blue next to violet).
+        for blue in ("#2348B5", "#0047AB", "#101E50", "#0000FF", "#1F3F8F"):
+            self.assertEqual(pt.describe(blue)["hue_family"], "blue / navy", blue)
+        expected = {"#7A4FD0": "violet / indigo", "#5B1F5E": "purple / plum",
+                    "#C8102E": "red", "#BC8A93": "pink / rose", "#3B2618": "brown",
+                    "#F0E2C8": "cream / ivory", "#B08C62": "tan / camel",
+                    "#C9A03A": "gold / mustard", "#14A84A": "green", "#00B5B8": "teal / turquoise"}
+        for hx, name in expected.items():
+            self.assertEqual(pt.describe(hx)["hue_family"], name, hx)
         self.assertEqual(pt.describe("#808080")["chroma"], "neutral (almost no colour)")
         self.assertEqual(pt.describe("#FFFFFF")["lightness"], "very light")
         self.assertEqual(pt.describe("#0B0B0D")["lightness"], "very deep")
@@ -104,6 +113,15 @@ class TestPalettes(unittest.TestCase):
                 self.assertGreater(res["nearest"][0]["delta_e"], 6,
                                    f"{name}: avoid colour {a['hex']} is inside the palette")
 
+    def test_overlap_between_neighbours(self):
+        res = pt.overlap("deep winter", "bright winter", PALETTES)
+        self.assertEqual(res["seasons"], ["Deep Winter", "Bright Winter"])
+        self.assertGreater(len(res["shared"]), 3)
+        for s in res["shared"]:
+            self.assertLessEqual(s["delta_e_to_other"], res["limit"])
+        far = pt.overlap("light spring", "deep winter", PALETTES, limit=6)
+        self.assertLess(len(far["shared"]), len(res["shared"]))
+
     def test_season_aliases(self):
         self.assertEqual(pt.find_season("dark winter", PALETTES), "Deep Winter")
         self.assertEqual(pt.find_season("True-Autumn", PALETTES), "Warm Autumn")
@@ -146,6 +164,17 @@ class TestWhiteBalance(unittest.TestCase):
     def test_blue_cast_detected(self):
         r = pt.white_balance("#D8E4F5", "#8A6A5A")
         self.assertTrue(any("blue" in c for c in r["cast"]))
+
+    def test_green_paper_is_foliage_not_warm_bulb(self):
+        r = pt.white_balance("#E8F0E2", "#B0876A")
+        self.assertTrue(any("green" in c for c in r["cast"]))
+        self.assertFalse(any("warm bulb" in c for c in r["cast"]))
+        self.assertNotEqual(r["confidence"], "high")
+
+    def test_reflection_forces_low_and_limits_use(self):
+        r = pt.white_balance("#F4F4F4", "#A0705A", reflection=True)
+        self.assertEqual(r["confidence"], "low")
+        self.assertEqual(r["usable_for"], ["lightness", "contrast"])
 
     def test_too_dark_white_refuses(self):
         with self.assertRaises(ValueError):
@@ -218,10 +247,19 @@ class TestSkillPackage(unittest.TestCase):
             self.assertGreater(len(text), 3000, f"{r} looks too thin")
 
     def test_core_rules_present(self):
-        for phrase in ("Country and city", "Budget", "What they want to wear and where",
-                       "Check-in (mandatory", "Shopping comes last", "Never invent",
-                       "never by facial resemblance", "High / Medium / Low"):
+        for phrase in ("Where they live and where the event is", "Budget",
+                       "What they want to wear and where", "Check-in (mandatory",
+                       "Shopping comes last", "Never invent", "never by facial resemblance",
+                       "High / Medium / Low", "Quick path", "Answer their stated worry first",
+                       "plain light wall behind", "foundation history"):
             self.assertIn(phrase, self.skill)
+
+    def test_unsure_menu_comes_before_advice(self):
+        menu = self.skill.index("## Step 5. If they're unsure")
+        advise = self.skill.index("## Step 6. Advise")
+        checkin = self.skill.index("## Step 4. Check-in")
+        self.assertLess(checkin, menu)
+        self.assertLess(menu, advise)
 
     def test_shopping_has_no_prices(self):
         with open(os.path.join(SKILL, "references", "shopping-by-country.md"), encoding="utf-8") as fh:

@@ -16,6 +16,8 @@ the host when unsure, and treat this file as common practice.
 10. Day vs night, indoor vs outdoor, climate
 11. Creative workplaces and gender-neutral dressing
 12. Adaptive notes for events
+13. Event details (garden party, Italy, graduation, naming ceremony, Lagos, winter dancing, Korean interviews)
+14. Being photographed
 
 ## 1. How to read a dress code
 
@@ -146,3 +148,57 @@ tie from the person's palette (the colour nearest the face matters most).
 - Wheelchair users: no long trains or long dupattas near wheels; pre-stitched sarees, lehenga
   sarees, kurtas with side openings, short jackets or capes; focus detail on the upper half.
 - Older guests: non-slip shoes, a stole for warmth, garments that open at the front.
+
+## 13. Event details the persona tests asked for
+
+**Filter first.** Colours named in this file (sand, olive, pastels, black) are what people commonly
+wear, not what suits a given person. Always swap them for the nearest colours in the person's own
+palette.
+
+**Garden party / outdoor daytime wedding (Europe and similar):** lighter suits (light grey, soft
+blue, stone, or the person's palette equivalents) or a blazer and trousers; tie often optional (ask
+the couple); dresses in cotton, silk or crepe at knee to midi length; block heels or flats for
+grass; a layer for the evening. In Italy, a common custom treats all-black as too funereal for a
+daytime wedding, guests avoid white and ivory, and shoulders are covered in church (bring a jacket
+or wrap). Ask the couple when unsure.
+
+**Graduation under a gown:** ask the gown and hood colours (they sit next to the face). Only the
+collar, cuffs, hem and shoes show, so put detail there. **Cap over a hijab:** a flat-crown wrap,
+a non-slip underscarf, matte fabric, and pins anchored into the underscarf; practise once with a
+cap or a book. Plan for the after-event with the gown off (photos, dinner), and in Gulf cities layer
+for cold indoor air conditioning and outdoor heat.
+
+**Naming ceremonies and family blessings (Indian and other):** comfortable, festive, traditional if
+the family is; the person may hold the baby, so avoid brooches, sharp jewellery and pins on the front;
+soft fabrics near the baby's face. Older relatives often appreciate traditional dress (kasavu in
+Kerala, silk elsewhere).
+
+**Lagos "black tie" and owambe:** native formal (aso oke, lace, agbada, gele) is accepted and often
+expected unless the invitation says otherwise; ask whether there is an aso ebi. Tailors book up
+before big events, so allow several weeks for a made-to-measure outfit. Gele and makeup are usually
+booked with professionals on the day.
+
+**Dancing events in winter (North Indian sangeet, mehendi):** expect a hot dance floor and a cold
+lawn. Breathable inner layers, a removable jacket, shawl or Nehru jacket, no heavy trains, shoes you
+can dance in, and pockets or a small bag for the phone.
+
+**Korean job interviews in an existing black suit:** a black suit is acceptable for interviews in
+Korea; avoid pairing it with a black tie (reads as funeral dress). A white or light blue shirt and a
+navy or subdued patterned tie are safe; fix the shoulder fit or rent if the jacket is too big.
+In winter, a plain navy, charcoal or camel overcoat over the suit (taken off before the interview
+room). If unsure about a tie at a large company, wear one; it's easy to remove if the room is
+tieless, and impossible to add.
+
+**When the person's best colour is the bride's or host's colour:** wear it as a border, blouse,
+accent or accessory rather than the main colour.
+
+## 14. Being photographed (events)
+
+- **Face the light**: stand facing windows or the main light; avoid light from directly above.
+- **Contrast near the face**: a lighter or brighter colour, a contrast border, or jewellery near the
+  face keeps deep and light skin alike from blending into dark backgrounds.
+- **Some sheen**: silk, zari and satin catch light; very matte dark fabric on dark skin in dim halls
+  can lose detail. Mix matte and shine.
+- **Skin**: matte powder against shine, but test for white flashback (some sunscreens and powders).
+- **Ask the photographer** to expose for faces; phones in portrait mode do better with the face in
+  light. None of this is about looking lighter: the goal is for the camera to see the person.

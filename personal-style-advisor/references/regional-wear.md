@@ -77,7 +77,7 @@ Drape tips by proportion:
 | Gadwal, Uppada, Venkatagiri, Mangalagiri | Telangana, Andhra Pradesh | silk-cotton, light zari, fine cottons | weddings, festive, daily |
 | Mysore silk | Karnataka | light crepe silk, plain body, gold border | office, light festive |
 | Ilkal | Karnataka | cotton-silk with a distinctive pallu | festive |
-| Kasavu | Kerala | off-white cotton with gold border | Onam, Vishu, weddings |
+| Kasavu | Kerala | off-white cotton with gold border | Onam, Vishu, weddings; real zari borders can scratch sensitive skin, so choose a thin border, a soft-lined blouse, or a ready-to-wear kasavu set-mundu |
 | Sambalpuri, Bomkai | Odisha | ikat, tribal motifs | festive |
 | Jamdani, Tant, Baluchari, Kantha | West Bengal (Jamdani also Bangladesh) | fine cotton with woven motifs, narrative silk, embroidery | Durga Puja, daily, weddings |
 | Muga, Eri, Pat silk | Assam | golden muga, warm eri | Bihu, bridal |
@@ -295,8 +295,8 @@ modal for comfort, chiffon for events, cotton voile for heat); pins and undersca
 
 | Country / group | Garments | Notes |
 |---|---|---|
-| Nigeria (Yoruba) | agbada (flowing robe) with buba and sokoto, fila cap; women: iro and buba, gele (head tie), aso oke | **aso ebi**: guests buy matching fabric chosen by the hosts; ask whether there is one |
-| Nigeria (Igbo) | isiagu (lion-head print) with red cap, george wrapper, blouse, coral beads | — |
+| Nigeria (ask which group; Nigeria has hundreds) — Yoruba | agbada (flowing robe) with buba and sokoto, fila cap; women: iro and buba, gele (head tie), aso oke | **aso ebi**: guests buy matching fabric chosen by the hosts; ask whether there is one |
+| Nigeria (Igbo) | men: isiagu (lion-head print) top with trousers or wrapper, red or patterned cap (okpu), walking stick for titled men; women: george or hollandis wrapper (often double), lace or embellished blouse, gele, coral beads (red coral necklaces and bracelets for brides and special occasions) | coral red pairs with cream, gold, emerald, royal blue and white; on deep cool colouring, pair coral with silver-toned or white gele and cool jewel wrappers, or choose a deeper red coral; ask which family colours apply |
 | Nigeria (Hausa, Fulani) | babban riga, kaftan, zanna cap; women: wrapper, blouse, hijab or veil | — |
 | Lagos galas and owambe parties | couture in lace, ankara, aso oke, sequins, gele; "black tie or native" | bold colour and detail are expected; fit is tailored; see occasions.md |
 | Ghana | kente (Asante, Ewe), kaba and slit (women), batakari / smock (north), fugu | funerals: black, red, or white (for a long life) |
@@ -324,7 +324,7 @@ modal for comfort, chiffon for events, cotton voile for heat); pins and undersca
 | Country | Garments | Notes |
 |---|---|---|
 | Scotland | kilt, tartan, Prince Charlie jacket | wear a family or district tartan, or a universal one (e.g. Black Watch, Flower of Scotland) |
-| Ireland | Aran knits | — |
+| Ireland | Aran knits, Donegal tweed, Irish linen | Irish linen and tweed suit everyday tailoring; Aran knits for casual |
 | Germany, Austria | Tracht: dirndl, lederhosen | Oktoberfest; a commonly cited custom says the dirndl bow on the wearer's left means single and right means taken |
 | Spain | traje de flamenca (Feria de Abril), mantón | — |
 | Norway | bunad (regional) | Constitution Day; specific to region |
@@ -360,3 +360,7 @@ modal for comfort, chiffon for events, cotton voile for heat); pins and undersca
 - Don't wear sacred or earned items (religious headwear as costume, Indigenous headdresses,
   ceremonial cloaks) unless they were given or the community allows it.
 - Learn the name of what you wear and how to wear it properly (drape, tie, wrap direction).
+- **Diaspora and mixed heritage**: people with roots in more than one tradition often wear pieces from
+  each day to day (an ankara overshirt with Irish linen trousers, a kurta with jeans, a hanbok-inspired
+  jacket at work). That is their own culture, not borrowing. Ask which traditions they want to draw
+  on and how visible they want them to be; never assign a tradition from their appearance.
